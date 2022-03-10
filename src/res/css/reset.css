@@ -1,0 +1,338 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+/* font-family: 'Open Sans', sans-serif; */
+
+html,
+body,
+div,
+span,
+label,
+section,
+aside,
+footer,
+header,
+nav,
+video,
+table,
+tr,
+td,
+th {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+section,
+aside,
+footer,
+header,
+nav,
+main,
+span,
+label {
+  display: block;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  /*
+  -webkit-text-size-adjust: none;
+  / 크롬, 사파리 기준 /
+  -moz-text-size-adjust: none;
+  / 모질라 파이어폭스 기준 /
+  -ms-text-size-adjust: none;
+  / 익스플로러 기준 /
+  text-size-adjust: none;
+  /edge 기준 */
+  overflow-x: hidden;
+}
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  word-break: break-all;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+img {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.fade-enter,
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1000ms;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1000ms;
+}
+
+/* main animation */
+
+.st0 {
+  fill: none;
+  stroke: #3e4349;
+  stroke-width: 1.8715;
+  stroke-miterlimit: 10;
+}
+.st1 {
+  fill: none;
+  stroke: #3e4349;
+  stroke-width: 1.8715;
+  stroke-miterlimit: 10;
+}
+.st2 {
+  fill: none;
+  stroke: #3e4349;
+  stroke-width: 1.8715;
+  stroke-miterlimit: 10;
+}
+.st3 {
+  fill: none;
+  stroke: #d6bca1;
+  stroke-width: 1.8715;
+  stroke-miterlimit: 10;
+}
+
+@keyframes fill1 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #3e4349;
+  }
+}
+@keyframes fill2 {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #d6bca1;
+  }
+}
+
+@keyframes line-anim2 {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.st0:nth-child(1) {
+  stroke-dasharray: 480px;
+  stroke-dashoffset: 480px;
+  animation: line-anim2 2s ease forwards, fill1 0.5s linear forwards 0.8s;
+}
+
+.st0:nth-child(2) {
+  stroke-dasharray: 300px;
+  stroke-dashoffset: 300px;
+  animation: line-anim2 2s ease forwards 0.2s, fill1 0.5s linear forwards 1.2s;
+}
+
+.st0:nth-child(3) {
+  stroke-dasharray: 545px;
+  stroke-dashoffset: 545px;
+  animation: line-anim2 2s ease forwards 0.4s, fill1 0.5s linear forwards 1.6s;
+}
+
+.st1:nth-child(1) {
+  stroke-dasharray: 480px;
+  stroke-dashoffset: 480px;
+  animation: line-anim2 2s ease forwards 0.6s;
+}
+
+.st1:nth-child(2) {
+  stroke-dasharray: 330px;
+  stroke-dashoffset: 330px;
+  animation: line-anim2 2s ease forwards 0.8s;
+}
+
+.st1:nth-child(3) {
+  stroke-dasharray: 360px;
+  stroke-dashoffset: 360px;
+  animation: line-anim2 2s ease forwards 1s;
+}
+
+.st1:nth-child(4) {
+  stroke-dasharray: 360px;
+  stroke-dashoffset: 360px;
+  animation: line-anim2 2s ease forwards 1.2s;
+}
+
+.st1:nth-child(5) {
+  stroke-dasharray: 540px;
+  stroke-dashoffset: 540px;
+  animation: line-anim2 2s ease forwards 1.4s;
+}
+
+.st2:nth-child(1) {
+  stroke-dasharray: 470px;
+  stroke-dashoffset: 470px;
+  animation: line-anim2 2s ease forwards 1.6s;
+}
+.st2:nth-child(2) {
+  stroke-dasharray: 365px;
+  stroke-dashoffset: 365px;
+  animation: line-anim2 2s ease forwards 1.8s;
+}
+.st2:nth-child(3) {
+  stroke-dasharray: 355px;
+  stroke-dashoffset: 355px;
+  animation: line-anim2 2s ease forwards 2s;
+}
+.st2:nth-child(4) {
+  stroke-dasharray: 355px;
+  stroke-dashoffset: 355px;
+  animation: line-anim2 2s ease forwards 2.2s;
+}
+
+.st3:nth-child(1) {
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+  animation: line-anim2 2s ease forwards, fill2 0.5s linear forwards 0.4s;
+}
+.st3:nth-child(2) {
+  stroke-dasharray: 140px;
+  stroke-dashoffset: 140px;
+  animation: line-anim2 2s ease forwards 0.2s, fill2 0.5s linear forwards 0.8s;
+}
+.st3:nth-child(3) {
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+  animation: line-anim2 2s ease forwards 0.4s, fill2 0.5s linear forwards 1.2s;
+}
+.st3:nth-child(4) {
+  stroke-dasharray: 215px;
+  stroke-dashoffset: 215px;
+  animation: line-anim2 2s ease forwards 0.6s, fill2 0.5s linear forwards 1.6s;
+}
+.st3:nth-child(5) {
+  stroke-dasharray: 165px;
+  stroke-dashoffset: 165px;
+  animation: line-anim2 2s ease forwards 0.8s, fill2 0.5s linear forwards 1.6s;
+}
+.st3:nth-child(6) {
+  stroke-dasharray: 60px;
+  stroke-dashoffset: 60px;
+  animation: line-anim2 2s ease forwards 1s, fill2 0.5s linear forwards 2s;
+}
+.st3:nth-child(7) {
+  stroke-dasharray: 240px;
+  stroke-dashoffset: 240px;
+  animation: line-anim2 2s ease forwards 1s, fill2 0.5s linear forwards 2s;
+}
+.st3:nth-child(8) {
+  stroke-dasharray: 220px;
+  stroke-dashoffset: 220px;
+  animation: line-anim2 2s ease forwards 1.2s, fill2 0.5s linear forwards 2s;
+}
+.st3:nth-child(9) {
+  stroke-dasharray: 255px;
+  stroke-dashoffset: 255px;
+  animation: line-anim2 2s ease forwards 1.4s, fill2 0.5s linear forwards 2.4s;
+}
+.st3:nth-child(10) {
+  stroke-dasharray: 270px;
+  stroke-dashoffset: 270px;
+  animation: line-anim2 2s ease forwards 1.4s, fill2 0.5s linear forwards 2.4s;
+}
+.st3:nth-child(11) {
+  stroke-dasharray: 220px;
+  stroke-dashoffset: 220px;
+  animation: line-anim2 2s ease forwards 1.4s, fill2 0.5s linear forwards 2.4s;
+}
+.st3:nth-child(12) {
+  stroke-dasharray: 190px;
+  stroke-dashoffset: 190px;
+  animation: line-anim2 2s ease forwards 1.6s, fill2 0.5s linear forwards 3s;
+}
+.st3:nth-child(13) {
+  stroke-dasharray: 220px;
+  stroke-dashoffset: 220px;
+  animation: line-anim2 2s ease forwards 1.6s, fill2 0.5s linear forwards 3s;
+}
+.st3:nth-child(14) {
+  stroke-dasharray: 140px;
+  stroke-dashoffset: 140px;
+  animation: line-anim2 2s ease forwards 1.8s, fill2 0.5s linear forwards 3s;
+}
+.st3:nth-child(15) {
+  stroke-dasharray: 200px;
+  stroke-dashoffset: 200px;
+  animation: line-anim2 2s ease forwards 1.8s, fill2 0.5s linear forwards 3.4s;
+}
+.st3:nth-child(16) {
+  stroke-dasharray: 255px;
+  stroke-dashoffset: 255px;
+  animation: line-anim2 2s ease forwards 2s, fill2 0.5s linear forwards 3.4s;
+}
+.st3:nth-child(17) {
+  stroke-dasharray: 220px;
+  stroke-dashoffset: 220px;
+  animation: line-anim2 2s ease forwards 2s, fill2 0.5s linear forwards 3.6s;
+}
+.st3:nth-child(18) {
+  stroke-dasharray: 140px;
+  stroke-dashoffset: 140px;
+  animation: line-anim2 2s ease forwards 2s, fill2 0.5s linear forwards 3.6s;
+}
